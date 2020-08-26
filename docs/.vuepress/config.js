@@ -13,7 +13,7 @@ module.exports = {
         text: "文档",
         // 这里是下拉列表展现形式。
         items: [
-          { text: "2.0.0", link: "/components/2.0/catButton" },
+          { text: "2.0.0", link: "/components/2.0/lhButton" },
           { text: "1.0.0", link: "/components/1.0/" }
         ]
       },

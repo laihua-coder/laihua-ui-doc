@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,5 +32,14 @@
     "commitlint-config-cz": "^0.13.2",
     "cz-customizable": "^6.3.0",
     "vuepress": "^1.5.4"
+  },
+  "dependencies": {
+    "@vssue/api-github-v3": "^1.4.4",
+    "@vssue/vuepress-plugin-vssue": "^1.4.6",
+    "element-ui": "^2.13.2",
+    "highlight.js": "^10.1.2",
+    "inputmask": "^5.0.5",
+    "vue": "^2.6.12",
+    "vue-highlight.js": "^3.1.0"
   }
 }

@@ -11,7 +11,7 @@ title: 2.0 Button 按钮
 <baseComponent-codeBox title="按钮类型"
   description="按钮类型通过设置type为primary、success、info、warning、danger、text创建不同样式的按钮，不设置为默认样式。"
   onlineLink="https://codepen.io/1011cat/pen/KjEOWO">
-  <example-lh_button></example-lh_button>
+  <demo-catButton-type_catButton></demo-catButton-type_catButton>
   <!-- 这里直接设置 引入的展示代码 ；注意引入代码一定不能缩进！！！否则不能生效！-->
   <highlight-code slot="codeText" lang="vue">
 <<< @/docs/.vuepress/components/demo/catButton/type_catButton.vue
@@ -21,6 +21,9 @@ title: 2.0 Button 按钮
 <!-- 组件的参数表格,这里我没有使用自带的markdown表格，因为太丑，样式不好修改，有时参数描述较少时，不能自动撑满一行，所以自己写了一个组件；titile为表格标题，tableHead为表头，tableBody为具体参数设置，并且支持el-table的table参数 -->
 <baseComponent-apiTable title="Attributes" :tableBody="tableBody" :tableHead="tableHead">
 </baseComponent-apiTable>
+
+<!-- 给个star 彩蛋组件 -->
+<baseComponent-star></baseComponent-star>
 
 <!-- 第三方评论插件 -->
 <Vssue title="" />

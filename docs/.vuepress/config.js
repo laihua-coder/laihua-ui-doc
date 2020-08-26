@@ -1,10 +1,22 @@
 module.exports = {
-  title: "来画前端UI框架",
+  base: '/',
+  title: "Laihua-UI 中文版",
   description:
     "一个基于 Element ui 深度定制开源前端实践方案，帮助你快速构建应用",
   port: 8081,
+  head:[
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+  ],
   //主题配置
   themeConfig: {
+    // repo: "laihua-coder/laihua-ui",
+    // docsDir: 'docs',
+    // editLinks: true,
+    // editLinkText: '编辑此页',
+    // sidebarDepth: 3,
     //顶部导航栏配置
     nav: [
       { text: "主页", link: "/" }, // 内部链接 以docs为根目录
@@ -13,8 +25,7 @@ module.exports = {
         text: "文档",
         // 这里是下拉列表展现形式。
         items: [
-          { text: "2.0.0", link: "/components/2.0/lhButton" },
-          { text: "1.0.0", link: "/components/1.0/" }
+          { text: 'v1.0.0', link: '/components/2.0/catButton' },
         ]
       },
       {
@@ -37,26 +48,13 @@ module.exports = {
           children: [
             {
               title: "Button 按钮",
-              path: "catButton"
+              path: "lhButton"
             }
           ]
         },
         {
           title: "基础组件1",
           path: "./" //和上面的基础组件对应，这里基础组件1则可以点击，展示对应的介绍和说明，则此处设置为'./'，它会默认解析当前文件夹下的README.md。具体效果请查看页面进行对比
-        }
-      ],
-      "/components/1.0/": [
-        {
-          title: "基础组件",
-          path: "",
-          collapsable: false,
-          children: [
-            {
-              title: "Button 按钮",
-              path: "catButton"
-            }
-          ]
         }
       ],
       "/guide/": [
@@ -85,5 +83,46 @@ module.exports = {
     },
     sidebarDepth: 1, // 将同时提取markdown中h2，显示在侧边栏上
     lastUpdated: "最后更新于" // 文档更新时间：每个文件git最后提交的时间
-  }
+  },
+  markdown: {
+    lineNumbers: true // 代码块显示行号
+  },
+  plugins: [
+    // 官方回到顶部插件
+    '@vuepress/back-to-top',
+    '@vuepress/nprogress',
+    '@vuepress/pwa',
+    [
+      '@vuepress/register-components',
+      {
+        components: [
+          {
+            name: 'catButton',
+            path: '../../src/index'
+          }
+        ]
+      }
+    ],
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }],
+    //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
+    ['@vuepress/medium-zoom',{selector: 'img'}],
+    // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
+    ['@vssue/vuepress-plugin-vssue',{
+      // 设置 `platform` 而不是 `api` 我这里是在github平台
+      platform: 'github',
+
+      // owner与repo配置 https://github.com/${owner}/${repo}
+      // 例如我的仓库地址为https://github.com/1011cat/shotCat_doc 则owner为1011cat，repo为shotCat_doc
+      owner: 'https://github.com/laihua-coder',
+      repo: 'https://github.com/laihua-coder/laihua-ui',
+
+      // 填写自己的OAuth App 信息。详见https://vssue.js.org/zh/options/#repo
+      clientId: 'clientId',
+      clientSecret: 'clientSecret',
+      locale: 'zh', //使用的语言  这里是简体中文
+      baseURL: 'https://github.com'}] //平台的 base URL
+  ]
+
 };

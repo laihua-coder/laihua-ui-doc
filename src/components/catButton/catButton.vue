@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "lh-button",
+  name: "cat-button",
 
   props: {
     text: {

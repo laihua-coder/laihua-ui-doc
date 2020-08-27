@@ -1,5 +1,5 @@
 ---
-title: Alert 警告
+title: alert
 ---
 
 # Alert 警告

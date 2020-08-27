@@ -34,11 +34,11 @@ module.exports = {
       children: [
         {
           title: "Layout 布局",
-          path: "layout"
+          path: "base/layout"
         },
         {
           title: "Container 布局容器",
-          path: "container"
+          path: "base/container"
         }
       ]
     },
@@ -48,11 +48,11 @@ module.exports = {
       children: [
         {
           title: "Radio 单选框",
-          path: "radio"
+          path: "form/radio"
         },
         {
           title: "Checkbox 多选框",
-          path: "checkbox"
+          path: "form/checkbox"
         }
       ]
     },
@@ -62,11 +62,11 @@ module.exports = {
       children: [
         {
           title: "Table 表格",
-          path: "table"
+          path: "data/table"
         },
         {
           title: "Tag 标签",
-          path: "tag"
+          path: "data/tag"
         }
       ]
     },
@@ -76,11 +76,11 @@ module.exports = {
       children: [
         {
           title: "Alert 警告",
-          path: "alert"
+          path: "notice/alert"
         },
         {
           title: "Loading 加载",
-          path: "loading"
+          path: "notice/loading"
         }
       ]
     },
@@ -90,11 +90,11 @@ module.exports = {
       children: [
         {
           title: "NavMenu 导航菜单",
-          path: "navMenu"
+          path: "navigation/navMenu"
         },
         {
           title: "Tabs 标签页",
-          path: "tabs"
+          path: "navigation/tabs"
         }
       ]
     },
@@ -104,11 +104,11 @@ module.exports = {
       children: [
         {
           title: "lhCode 验证码",
-          path: "navMenu"
+          path: "business/lhCode"
         },
         {
           title: "lhCaptcha 图形验证码",
-          path: "tabs"
+          path: "business/lhCaptcha"
         }
       ]
     },
@@ -118,11 +118,11 @@ module.exports = {
       children: [
         {
           title: "Dialog 对话框",
-          path: "dialog"
+          path: "other/dialog"
         },
         {
           title: "Tooltip 文字提示",
-          path: "tooltip"
+          path: "other/tooltip"
         }
       ]
     }

@@ -1,5 +1,5 @@
 ---
-title: Loading 加载
+title: loading
 ---
 
 # Loading 加载

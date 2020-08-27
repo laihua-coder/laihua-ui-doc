@@ -21,11 +21,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "cz-customizable": "^6.3.0",
-    "commitlint-config-cz": "^0.13.2",
     "commitizen": "^4.2.1",
-    "ant-design-vue": "^1.6.1",
+    "commitlint-config-cz": "^0.13.2",
     "core-js": "^2.6.5",
+    "cz-customizable": "^6.3.0",
+    "element-ui": "^2.13.2",
     "husky": "^4.2.5",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
@@ -33,5 +33,8 @@
     "vuepress": "1.5.3"
   },
   "author": "zzw",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vuepress-theme-antdocs": "^1.1.1"
+  }
 }

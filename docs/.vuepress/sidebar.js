@@ -29,12 +29,58 @@ module.exports = {
   ],
   "/components/": [
     {
-      title: "组件",
-      collapsable: false,
+      title: "基础组件",
+      collapsable: true,
       children: [
         {
-          title: "综合组件",
-          path: "complex"
+          title: "Layout 布局",
+          path: "layout"
+        },
+        {
+          title: "Container 布局容器",
+          path: "container"
+        }
+      ]
+    },
+    {
+      title: "表单组件",
+      collapsable: true,
+      children: [
+        {
+          title: "Radio 单选框",
+          path: "radio"
+        },
+        {
+          title: "Checkbox 多选框",
+          path: "checkbox"
+        }
+      ]
+    },
+    {
+      title: "数据组件",
+      collapsable: true,
+      children: [
+        {
+          title: "Table 表格",
+          path: "table"
+        },
+        {
+          title: "Tag 标签",
+          path: "tag"
+        }
+      ]
+    },
+    {
+      title: "提示组件",
+      collapsable: true,
+      children: [
+        {
+          title: "Alert 警告",
+          path: "alert"
+        },
+        {
+          title: "Loading 加载",
+          path: "loading"
         }
       ]
     }

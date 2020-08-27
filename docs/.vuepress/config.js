@@ -55,13 +55,3 @@ module.exports = {
     },
   },
 };
-
-// function genSidebarConfig(title) {
-//   return [
-//     {
-//       title,
-//       collapsable: false,
-//       children: ["/", "started/started", "options/options", "components/complex"],
-//     },
-//   ];
-// }

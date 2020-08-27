@@ -1,5 +1,5 @@
 ---
-title: Checkbox 多选框
+title: checkbox
 ---
 
 # Checkbox 多选框

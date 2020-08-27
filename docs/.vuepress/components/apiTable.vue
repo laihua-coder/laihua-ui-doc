@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "DemoApi",
+  name: "apiTable",
   props: {
     type: {
       type: String,

@@ -1,9 +1,9 @@
 import ElementUI from "element-ui";
-import CustomDemoBlock from './CustomDemoBlock.vue'
+// import apiTable from './components/apiTable.vue'
 import "element-ui/lib/theme-chalk/index.css";
 export default ({
   Vue
 }) => {
-  Vue.component('CustomDemoBlock', CustomDemoBlock)
   Vue.use(ElementUI);
+  // Vue.component('apiTable', apiTable)
 }

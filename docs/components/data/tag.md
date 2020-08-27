@@ -1,5 +1,5 @@
 ---
-title: Tag 标签
+title: tag
 ---
 
 # Tag 标签

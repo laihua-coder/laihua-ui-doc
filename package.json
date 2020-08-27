@@ -1,8 +1,8 @@
 {
   "name": "laihua-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "一个基于 Element ui 深度定制开源前端实践方案，帮助你快速构建应用",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "vuepress dev docs",
     "commit": "git-cz",
@@ -15,31 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laihua-coder/laihua-ui.git"
+    "url": "https://github.com/laihua-coder/laihua-ui.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-customizable": "^6.3.0",
+    "commitlint-config-cz": "^0.13.2",
+    "commitizen": "^4.2.1",
+    "ant-design-vue": "^1.6.1",
+    "core-js": "^2.6.5",
+    "husky": "^4.2.5",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "markdown-it-container": "^2.0.0",
+    "vuepress": "1.5.3"
   },
   "author": "zzw",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/laihua-coder/laihua-ui/issues"
-  },
-  "homepage": "https://github.com/laihua-coder/laihua-ui#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "@vuepress/plugin-back-to-top": "^1.5.4",
-    "@vuepress/plugin-medium-zoom": "^1.5.4",
-    "commitizen": "^4.2.1",
-    "commitlint-config-cz": "^0.13.2",
-    "cz-customizable": "^6.3.0",
-    "vuepress": "^1.5.4"
-  },
-  "dependencies": {
-    "@vssue/api-github-v3": "^1.4.4",
-    "@vssue/vuepress-plugin-vssue": "^1.4.6",
-    "element-ui": "^2.13.2",
-    "highlight.js": "^10.1.2",
-    "inputmask": "^5.0.5",
-    "vue": "^2.6.12",
-    "vue-highlight.js": "^3.1.0"
-  }
+  "license": "MIT"
 }

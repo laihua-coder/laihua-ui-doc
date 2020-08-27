@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /contributor.png
 actionText: 快速上手 →
 actionLink: /guide/introduction
 features:

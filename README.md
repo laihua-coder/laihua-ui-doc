@@ -1,15 +1,15 @@
-# Introduction
+# 简介
 
-[点此查看中文简介](https://github.com/calebman/vuepress-plugin-demo-container/blob/master/README.zh-CN.md)
+`laihua-ui` 是一个基于 `Element-UI` 的组件，它可以帮助你在编写文档的时候增加 `组件` 示例，它的诞生初衷是为了降低编写组件文档时增加一些相关示例的难度。
 
-`Demo Container` is a `Vuepress-based` plug-in, which can help you add `Vue` examples when writing documents. Its original intention is to reduce the difficulty of adding some related examples when writing component documents.
+使用 Vuepress 编写组件示例有以下尴尬之处：
 
-Using Vuepress to write component examples has the following embarrassment:
-1. Component examples and sample code are essentially the same, but need to be written twice;
-2. Vuepress cannot render the `export default {}` code block in Markdown;
+1. 组件示例和示例代码本质上一样，却需要写两遍；
+2. Vuepress 无法渲染 Markdown 中的 `export default {}` 代码块；
 
-The Demo Container refers to Element UI's document rendering and implements the same syntax as it can be used to write sample syntax directly in Markdown.
-* Element UI ColorPicker component **documentation example**, [click here to view](https://github.com/ElemeFE/element/blob/dev/examples/docs/en-US/color-picker.md)
-* Element UI ColorPicker component **document sample preview**, [click here to view](https://element.eleme.cn/2.0/#/en-US/component/color-picker)。
+Demo Container 参考了 Element UI 的文档渲染，实现了和它一样的，可在 Markdown 中直接编写示例的语法。
 
-[Click here for examples and documentation](https://calebman.github.io/vuepress-plugin-demo-container/)
+- Element UI ColorPicker 组件的**文档编写示例**，[点此查看](https://github.com/ElemeFE/element/blob/dev/examples/docs/zh-CN/color-picker.md)
+- Element UI ColorPicker 组件的**文档示例预览**，[点此查看](https://element.eleme.cn/2.0/#/zh-CN/component/color-picker)
+
+[点此查看示例与使用文档](https://docs.chenjianhui.site/vuepress-plugin-demo-container/zh/)

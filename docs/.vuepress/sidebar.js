@@ -83,6 +83,48 @@ module.exports = {
           path: "loading"
         }
       ]
+    },
+    {
+      title: "导航组件",
+      collapsable: true,
+      children: [
+        {
+          title: "NavMenu 导航菜单",
+          path: "navMenu"
+        },
+        {
+          title: "Tabs 标签页",
+          path: "tabs"
+        }
+      ]
+    },
+    {
+      title: "业务组件",
+      collapsable: true,
+      children: [
+        {
+          title: "lhCode 验证码",
+          path: "navMenu"
+        },
+        {
+          title: "lhCaptcha 图形验证码",
+          path: "tabs"
+        }
+      ]
+    },
+    {
+      title: "其他组件",
+      collapsable: true,
+      children: [
+        {
+          title: "Dialog 对话框",
+          path: "dialog"
+        },
+        {
+          title: "Tooltip 文字提示",
+          path: "tooltip"
+        }
+      ]
     }
   ]
 };

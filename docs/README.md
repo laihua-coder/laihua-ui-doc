@@ -9,42 +9,42 @@ features:
   - title: 功能完善
     details: 一个基于 Element ui 深度定制开源前端实践方案，帮助你快速构建应用。
   - title: 轻松上手
-    details: 你甚至都不需要阅读vuepress文档即可快速上手，每个文件，每行代码都有详细的注释说明。
-footer: MIT Licensed | Copyright © 2020 present laihuaUI
+    details: 你甚至都不需要阅读Element ui文档即可快速上手，每个文件，每行代码都有详细的注释说明。
+footer: MIT Licensed | Copyright © 2020 present laihua-ui
 footerColumn: 4
 footerWrap:
   - headline: 生态系统
     items:
-      - title: Item 1
-        link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
-      - title: Item 2
-        link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+      - title: 来画官网
+        link: https://www.laihua.com/
+        # details: details
+      - title: 来画创意
+        link: https://www.laihuastory.com/
+        # details: details
   - headline: 资源链接
     items:
       - title: Item 1
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
       - title: Item 2
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
   - headline: 社区交流
     items:
       - title: Item 1
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
       - title: Item 2
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
   - headline: 相关博客
     items:
       - title: Item 1
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
       - title: Item 2
         link: https://github.com/zpfz/vuepress-theme-antdocs
-        details: details
+        # details: details
 ---
 
 ## 安装组件

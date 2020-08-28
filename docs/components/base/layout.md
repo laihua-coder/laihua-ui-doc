@@ -2,7 +2,7 @@
 title: layout
 ---
 
-# Layout 布局
+## Layout 布局
 
 通过基础的 24 分栏，迅速简便地创建布局。
 

@@ -2,4 +2,4 @@
 title: dialog
 ---
 
-# Dialog 对话框
+## Dialog 对话框

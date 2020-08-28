@@ -2,4 +2,4 @@
 title: lhCaptcha
 ---
 
-# lhCaptcha 图形验证码
+## lhCaptcha 图形验证码

@@ -125,6 +125,26 @@ module.exports = {
           path: "other/tooltip"
         }
       ]
-    }
+    },
+    {
+      title: "过渡效果",
+      collapsable: true,
+      children: [
+        {
+          title: "过渡效果",
+          path: "transition/transition"
+        }
+      ]
+    },
+    {
+      title: "更新记录",
+      collapsable: true,
+      children: [
+        {
+          title: "更新记录",
+          path: "raleases/raleases"
+        }
+      ]
+    },
   ]
 };

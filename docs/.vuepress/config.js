@@ -1,5 +1,6 @@
 const path = require("path");
-const sidebar = require("./sidebar");
+const sidebar = require("./config/sidebar");
+const plugins = require("./config/plugins")
 const isProd = process.env.NODE_ENV === "production";
 module.exports = {
   title: "laihua-UI", // 标题
@@ -15,60 +16,55 @@ module.exports = {
     ["link", { rel: "icon", href: "/favicon.png" }] // 增加一个自定义的 favicon
   ],
   theme: "antdocs", // 主题
-  backToTop: true, // 是否显示置顶按钮
   themeConfig: {
     repo: "laihua-coder/laihua-ui",
     logo: "/logo.png",
     editLinks: false, // 是否可编辑
     docsDir: "docs", // 文档根目录
-    // postcss: [require("autoprefixer")],
-    // less: { indentedSyntax: true },
+    postcss: [require("autoprefixer")],
+    scss: { indentedSyntax: true },
+    backToTop: true, //  是否显示置顶按钮
     //顶部导航栏配置
     nav: [
       { text: "首页", link: "/" },
       { text: "指南", link: "/guide/introduction" },
-      { text: "组件", link: "/components/base/layout", collapsable: true },
+      { text: "组件", link: "/components/start", collapsable: true },
       {
         text: "更新记录",
-        link: "/components/raleases/raleases",
+        link: "/components/ralease/ralease",
         collapsable: true
       }
     ],
-    sidebar: sidebar
+    sidebar: sidebar,
+    sidebarDepth: 0, // 设置成 0 将会禁用标题（headers）链接。同时，最大的深度为 2，它将同时提取 h2 和 h3 标题。
+    lastUpdated: "最后更新时间", // string | boolean
+    // 广告栏
+    ads: {
+      style: 2,
+      speed: 2000,
+      items: [
+        {
+          text: "Ads details here",
+          image:
+            "https://cn.bing.com/th?id=OHR.LoughriggTarn_ZH-CN1404327665_1920x1080.jpg",
+          link: "https://vuepress.vuejs.org/"
+        },
+        {
+          text: "Ads details here",
+          image:
+            "https://cn.bing.com/th?id=OHR.MetamorphicRocks_ZH-CN9753251368_1920x1080.jpg",
+          link: "https://vuepress.vuejs.org/"
+        },
+        {
+          text: "Ads details here",
+          image:
+            "https://cn.bing.com/th?id=OHR.KeichitsuCrocuse_ZH-CN1061292366_1920x1080.jpg",
+          link: "https://vuepress.vuejs.org/"
+        }
+      ]
+    }
   },
-  // 广告栏
-  // ads: {
-  //   style: 2,
-  //   speed: 2000,
-  //   items: [
-  //     {
-  //       text: "Ads details here",
-  //       image:
-  //         "https://cn.bing.com/th?id=OHR.LoughriggTarn_ZH-CN1404327665_1920x1080.jpg",
-  //       link: "https://vuepress.vuejs.org/",
-  //     },
-  //     {
-  //       text: "Ads details here",
-  //       image:
-  //         "https://cn.bing.com/th?id=OHR.MetamorphicRocks_ZH-CN9753251368_1920x1080.jpg",
-  //       link: "https://vuepress.vuejs.org/",
-  //     },
-  //     {
-  //       text: "Ads details here",
-  //       image:
-  //         "https://cn.bing.com/th?id=OHR.KeichitsuCrocuse_ZH-CN1061292366_1920x1080.jpg",
-  //       link: "https://vuepress.vuejs.org/",
-  //     },
-  //   ],
-  // },
-  plugins: [
-    [
-      require("../../src"),
-      {
-        component: "DemoBlock"
-      }
-    ]
-  ],
+  plugins: plugins, // 插件
   configureWebpack: {
     resolve: {
       alias: {

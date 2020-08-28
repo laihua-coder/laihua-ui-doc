@@ -29,6 +29,26 @@ module.exports = {
   ],
   "/components/": [
     {
+      title: "使用说明",
+      collapsable: false,
+      children: [
+        {
+          title: "快速安装",
+          path: "start"
+        }
+      ]
+    },
+    {
+      title: "测试组件",
+      collapsable: true,
+      children: [
+        {
+          title: "demo-1",
+          path: "test/test"
+        }
+      ]
+    },
+    {
       title: "基础组件",
       collapsable: true,
       children: [
@@ -142,9 +162,9 @@ module.exports = {
       children: [
         {
           title: "更新记录",
-          path: "raleases/raleases"
+          path: "ralease/ralease"
         }
       ]
-    },
+    }
   ]
 };

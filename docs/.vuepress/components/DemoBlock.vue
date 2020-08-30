@@ -50,7 +50,7 @@ export default {
       isExpanded: false,
       fixedControl: false,
       codeContentWidth: 0,
-      scrollParent: null
+      scrollParent: null,
     };
   },
   props: {
@@ -71,14 +71,10 @@ export default {
       return this.isExpanded ? "caret-top" : "caret-bottom";
     },
     controlText() {
-      return this.isExpanded
-        ? "隐藏"
-        : "显示";
+      return this.isExpanded ? "隐藏" : "显示";
     },
     copiedText() {
-      return this.copied
-        ? "成功"
-        : "复制";
+      return this.copied ? "成功" : "复制";
     },
     codeArea() {
       return this.$el.getElementsByClassName("meta")[0];

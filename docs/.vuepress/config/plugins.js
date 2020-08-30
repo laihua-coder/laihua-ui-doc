@@ -1,6 +1,6 @@
 module.exports = [
   [
-    require("../../../src"),
+    require("../demoBlock"),
     {
       component: "DemoBlock"
     }

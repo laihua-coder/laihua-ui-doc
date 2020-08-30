@@ -45,6 +45,10 @@ module.exports = {
         {
           title: "demo-1",
           path: "test/test"
+        },
+        {
+          title: "demo-2",
+          path: "test/test1"
         }
       ]
     },

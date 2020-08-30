@@ -1,5 +1,5 @@
 ---
-title: test
+title: test1
 ---
 
 ## fade 淡入淡出
@@ -8,7 +8,7 @@ title: test
 
 ```html
 <template>
-  <lh-button></lh-button>
+  <lh-alert></lh-alert>
 </template>
 
 <script>

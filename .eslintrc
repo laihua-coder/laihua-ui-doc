@@ -25,6 +25,7 @@
       "error",
       4
     ],
+    "vue/max-attributes-per-line": "off",
     "max-statements": [
       "error",
       40

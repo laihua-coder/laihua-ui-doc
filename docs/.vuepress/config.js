@@ -8,6 +8,7 @@ module.exports = {
     "一个基于 Element ui 深度定制开源前端实践方案，帮助你快速构建应用", // 网站描述
   base: isProd ? "/laihua-ui/" : "/",
   port: "6700", // 启动端口
+  docsDir: 'docs',
   dest: "docs/.vuepress/dist/laihua-ui/",
   markdown: {
     lineNumbers: true

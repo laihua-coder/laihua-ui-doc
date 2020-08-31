@@ -23,7 +23,8 @@
     "url": "https://github.com/laihua-coder/laihua-ui.git"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "core-js": "^2.6.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",

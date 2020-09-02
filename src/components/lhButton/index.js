@@ -1,4 +1,5 @@
-import LhButton from './src/button';
+import "./style.scss";
+import LhButton from './lhButton';
 
 /* istanbul ignore next */
 LhButton.install = function(Vue) {

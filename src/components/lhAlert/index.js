@@ -1,4 +1,5 @@
-import LhAlert from './src/alert';
+import "./style.scss";
+import LhAlert from "./lhAlert";
 
 /* istanbul ignore next */
 LhAlert.install = function(Vue) {

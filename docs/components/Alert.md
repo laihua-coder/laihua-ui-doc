@@ -1,14 +1,14 @@
 ---
-title: test
+title: alert
 ---
 
-## fade 淡入淡出
+## Alert 警告
 
-::: demo 提供 `el-fade-in-linear` 和 `el-fade-in` 两种效果。
+::: demo
 
 ```html
 <template>
-  <lh-button></lh-button>
+  <lh-alert></lh-alert>
 </template>
 
 <script>

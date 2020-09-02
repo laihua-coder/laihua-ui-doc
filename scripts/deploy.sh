@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:laihua-coder/laihua-ui.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git push -f git@github.com:laihua-coder/laihua-ui.git master:gh-pages
+git push -f git@github.com:laihua-coder/laihua-ui-doc.git master:gh-pages
 
 cd -

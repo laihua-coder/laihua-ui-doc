@@ -27,13 +27,17 @@ function FileScss(name) {
 // 创建index.js 对外导出组件
 function FileIndex(name) {
   return `import './style.scss'
-import lh${name} from './lh${name}'
+import component from './lh${name}'
 
-lh${name}.install = function(Vue) {
-  Vue.component(lh${name}.name, lh${name});
+component.install = (vue) => {
+  vue.component('lh-${name.toLowerCase()}', component)
 }
 
-export default lh${name};
+if (typeof window !== 'undefined' && window.Vue) {
+  component.install(window.Vue)
+}
+
+export default component
 `.trim();
 }
 
@@ -41,8 +45,8 @@ export default lh${name};
 function FileComponent(name) {
   return `
   <template>
-  <div class="lh-${name}">
-    <div>我的是一个lh${name}组件</div>
+  <div class="lh-${name.toLowerCase()}">
+    <div>我的是一个${name}组件</div>
   </div>
 </template>
 
@@ -68,7 +72,7 @@ console.log(
     padding: 1,
     margin: 2,
     borderColor: "yellow",
-    borderStyle: "round"
+    borderStyle: "round",
   })
 );
 
@@ -86,10 +90,9 @@ var questions = [
       } else {
         return true;
       }
-    }
-  }
+    },
+  },
 ];
-
 
 // 创建组件文档
 function FileComponentMD(name) {
@@ -103,12 +106,10 @@ title : lh${name}
 
 \`\`\`html
 <template>
-  <lh-${name}></lh-${name}>
+  <lh-${name.toLowerCase()}></lh-${name.toLowerCase()}>
 </template>
 <script>
-  export default {
-    name: "lh${name}"
-  };
+  export default {};
 </script>
 \`\`\`
 
@@ -120,7 +121,7 @@ function addComponentConfig(name) {
   sed(
     "-i",
     "// new component slot 2",
-    `{title:"${name}",path:"${name}"}\n// new component slot 2`,
+    `{title:"${name}",path:"${name.toLowerCase()}"},\n\t\t\t\t\t\t// new component slot 2`,
     "config.js"
   );
 }
@@ -129,7 +130,7 @@ inquirer.prompt(questions).then(answers => {
   const name = answers.name;
   // 创建docs
   cd("./docs/components");
-  writeToFile(FileComponentMD(name), `${name}.md`); // 创建组件示例文档
+  writeToFile(FileComponentMD(name), `${name.toLowerCase()}.md`); // 创建组件示例文档
   cd("../../docs/.vuepress");
   addComponentConfig(name); // 配置config.js
   // 创建 component

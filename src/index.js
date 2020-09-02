@@ -1,23 +1,10 @@
-import Button from '../packages/button/index.js';
-import Alert from '../packages/alert/index.js';
-
-const components = [
-  Button,
-  Alert
-]
+import * as lhComponents from "./components";
 
 const install = (Vue) => {
-  Object.values(components).forEach(component => {
-    Vue.component(component.name, component);
+  // Use Components
+  Object.values(lhComponents).forEach(lhComponent => {
+    Vue.use(lhComponent);
   });
 };
 
-if (typeof window !== "undefined" && window.Vue) {
-  install(window.Vue);
-}
-
-export default {
-  install,
-  Button,
-  Alert
-}
+export default install;

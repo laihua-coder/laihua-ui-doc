@@ -1,15 +1,15 @@
 const path = require("path");
-const sidebar = require("./config/sidebar");
-const plugins = require("./config/plugins")
+// const sidebar = require("./config/sidebar");
+const plugins = require("./config/plugins");
 const isProd = process.env.NODE_ENV === "production";
 module.exports = {
   title: "laihua-UI", // 标题
   description:
     "一个基于 Element ui 深度定制开源前端实践方案，帮助你快速构建应用", // 网站描述
-  base: isProd ? "/laihua-ui/" : "/",
+  base: isProd ? "/laihua-ui-doc/" : "/",
   port: "6700", // 启动端口
-  docsDir: 'docs',
-  dest: "docs/.vuepress/dist/laihua-ui/",
+  docsDir: "docs",
+  dest: "docs/.vuepress/dist/",
   markdown: {
     lineNumbers: true
   }, // 是否显示行数
@@ -18,7 +18,7 @@ module.exports = {
   ],
   theme: "antdocs", // 主题
   themeConfig: {
-    repo: "laihua-coder/laihua-ui",
+    repo: "laihua-coder/laihua-ui-doc",
     logo: "/logo.png",
     editLinks: false, // 是否可编辑
     docsDir: "docs", // 文档根目录
@@ -36,7 +36,11 @@ module.exports = {
         collapsable: true
       }
     ],
-    sidebar: sidebar,
+    locales: {
+      "/": {
+        ...getSiderBar()
+      }
+    },
     sidebarDepth: 0, // 设置成 0 将会禁用标题（headers）链接。同时，最大的深度为 2，它将同时提取 h2 和 h3 标题。
     lastUpdated: "最后更新时间", // string | boolean
     // 广告栏
@@ -74,3 +78,52 @@ module.exports = {
     }
   }
 };
+
+function getSiderBar() {
+  return {
+    sidebar: {
+      ["/components/"]: [
+        {
+          title: "使用说明",
+          collapsable: false,
+          children: [
+            {
+              title: "快速安装",
+              path: "start"
+            }
+          ]
+        },
+        {
+          title: "组件",
+          collapsable: false,
+          children: [
+            { title: "alert", path: "alert" },
+            { title: "button", path: "button" },
+            { title: "layout", path: "layout" },
+            // new component slot 2
+          ]
+        },
+        {
+          title: "过渡效果",
+          collapsable: false,
+          children: [
+            {
+              title: "过渡效果",
+              path: "transition"
+            }
+          ]
+        },
+        {
+          title: "更新记录",
+          collapsable: false,
+          children: [
+            {
+              title: "更新记录",
+              path: "ralease"
+            }
+          ]
+        }
+      ]
+    }
+  };
+}

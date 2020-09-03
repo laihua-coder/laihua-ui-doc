@@ -97,10 +97,7 @@ function getSiderBar() {
           title: "组件",
           collapsable: false,
           children: [
-            { title: "alert", path: "alert" },
-            { title: "button", path: "button" },
-            { title: "layout", path: "layout" },
-            // new component slot 2
+						// new component slot 2
           ]
         },
         {

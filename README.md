@@ -13,3 +13,19 @@ Demo Container 参考了 Element UI 的文档渲染，实现了和它一样的�
 - Element UI ColorPicker 组件的**文档示例预览**，[点此查看](https://element.eleme.cn/2.0/#/zh-CN/component/color-picker)
 
 [点此查看示例与使用文档](https://docs.chenjianhui.site/vuepress-plugin-demo-container/zh/)
+
+## 组件生成
+
+`laihua-ui-doc` 他可以帮助你自动生成`组件`和`文档`示例 使用命令如下：
+
+### 输入命令
+
+```js
+npm run new
+```
+
+### 输入组件名
+
+例如 Button 脚本会自动生成 laihua-ui 组件。无需多余配置，开箱即用，方便快捷
+
+> 注意事项： 1.组件名首字母大写，2.组件名不可与现有组件库中组件重复
